@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player -- By Akelpha2.0</title>
+</head>
+<body>
+   <div>
+    <img src="images/cover.jpeg" alt="cover image" class="cover">
+    <h2>Now Playing</h2>
+    <h3 id="title">Song Title</h3>
+    <p id="artist">Artist Name</p>
+    <audio id="audio"></audio>
+    <div>
+        <button id="prev"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	<path d="M0 0h24v24H0z" fill="none" />
+	<path fill="#000" d="M17.46 6.11a1 1 0 0 0-1.04.08l-7 5c-.26.19-.42.49-.42.81s.16.63.42.81l7 5c.17.12.38.19.58.19c.16 0 .31-.04.46-.11c.33-.17.54-.51.54-.89V7c0-.37-.21-.72-.54-.89M6 6h2v12H6z" />
+</svg>
+</button>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+  <path d="M0 0h24v24H0z" fill="none" />
+  <path fill="#000" d="M8 5.75A1.75 1.75 0 0 0 6.25 7.5v10c0 .966.784 1.75 1.75 1.75h1a1.75 1.75 0 0 0 1.75-1.75v-10A1.75 1.75 0 0 0 9 5.75zm6.5 0a1.75 1.75 0 0 0-1.75 1.75v10c0 .966.784 1.75 1.75 1.75h1a1.75 1.75 0 0 0 1.75-1.75v-10a1.75 1.75 0 0 0-1.75-1.75z" />
+</svg>> -->
+        <button id="play"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	<path d="M0 0h24v24H0z" fill="none" />
+	<path fill="#000" d="M10.01 5.887c-1.667-.972-3.76.23-3.76 2.16v7.906c0 1.93 2.093 3.132 3.76 2.16l6.777-3.954c1.653-.964 1.653-3.354 0-4.318z" />
+</svg>
+
+</button>
+        <button id = next><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	<path d="M0 0h24v24H0z" fill="none" />
+	<path fill="#000" d="M18.75 7a.75.75 0 0 0-1.5 0v10a.75.75 0 0 0 1.5 0zm-4.296 3.945c.69.534.69 1.576 0 2.11a25.5 25.5 0 0 1-7.073 3.863l-.466.166c-.87.308-1.79-.28-1.907-1.178a30.3 30.3 0 0 1 0-7.812c.118-.898 1.037-1.486 1.907-1.177l.466.165a25.5 25.5 0 0 1 7.073 3.863" />
+</svg>
+</button>
+    </div>
+    <div class="progress">
+        <input type="range" value="0" id="progress">
+    </div>
+    <div class="volume">
+        <i class="vol-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	<path d="M0 0h24v24H0z" fill="none" />
+	<path fill="#000" fill-rule="evenodd" d="M13.51 6.303c-.255-1.466-1.932-2.065-3.083-1.25L7.94 6.817A1 1 0 0 1 7.363 7H5a3 3 0 0 0-3 3v4a3 3 0 0 0 3 3h2.363a1 1 0 0 1 .578.184l2.486 1.762c1.15.816 2.828.217 3.083-1.25c.322-1.85.49-3.754.49-5.696s-.168-3.845-.49-5.697m8.288 1.598a1 1 0 0 0-1.99.198a39.5 39.5 0 0 1 0 7.802a1 1 0 1 0 1.99.198a41.5 41.5 0 0 0 0-8.198m-3.925 1.017a1 1 0 1 0-1.993.164a35.5 35.5 0 0 1 0 5.836a1 1 0 0 0 1.993.164a37.5 37.5 0 0 0 0-6.164" clip-rule="evenodd" />
+</svg>
+</i>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+    </div>
+   </div> 
+</body>
+</html>
